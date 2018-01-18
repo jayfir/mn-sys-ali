@@ -1,2 +1,2 @@
-# mn-sys-basic
-jayfir系统基础核心
+# mn-sys-ali
+jayfir 阿里集成包
