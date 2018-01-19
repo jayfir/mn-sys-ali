@@ -338,4 +338,19 @@ class TopClient extends Component
         return substr($this->sdkVersion, 0, 11) . "-cluster" . substr($this->sdkVersion, 11);
     }
 
+    /**
+     * 对象转数组
+     * @param type $o
+     * @return type
+     */
+    public static function objectToArray($o)
+    {
+        if (is_object($o))
+            $o = get_object_vars($o);
+        if (is_array($o))
+            foreach ($o as $k => $v)
+                $o[$k] = self::ObjectToArray($v);
+        return $o;
+    }
+
 }
