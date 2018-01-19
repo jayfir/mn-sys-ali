@@ -2,6 +2,8 @@
 
 namespace jayfir\ali\dingtalk;
 
+use Yii;
+
 class DingTalkClient
 {
     /*     * @Author chaohui.zch copy from TopClient and modify 2016-12-14 * */
@@ -162,7 +164,7 @@ class DingTalkClient
     {
         $localIp = isset($_SERVER["SERVER_ADDR"]) ? $_SERVER["SERVER_ADDR"] : "CLI";
         $logger = new TopLogger;
-        $logger->conf["log_file"] = rtrim(TOP_SDK_WORK_DIR, '\\/') . '/' . "logs/top_comm_err_" . "_" . date("Y-m-d") . ".log";
+        $logger->conf["log_file"] = Yii::$app->getRuntimePath() . "/ali/logs/top_comm_err_" . "_" . date("Y-m-d") . ".log";
         $logger->conf["separator"] = "^_^";
         $logData = array(
             date("Y-m-d H:i:s"),
@@ -273,7 +275,7 @@ class DingTalkClient
         //如果TOP返回了错误码，记录到业务错误日志中
         if (isset($respObject->code)) {
             $logger = new TopLogger;
-            $logger->conf["log_file"] = rtrim(TOP_SDK_WORK_DIR, '\\/') . '/' . "logs/top_biz_err_" . "_" . date("Y-m-d") . ".log";
+            $logger->conf["log_file"] = Yii::$app->getRuntimePath() . "/ali/logs/top_biz_err_" . "_" . date("Y-m-d") . ".log";
             $logger->log(array(
                 date("Y-m-d H:i:s"),
                 $resp
