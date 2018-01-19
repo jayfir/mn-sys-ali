@@ -3,7 +3,8 @@
     "description": "JayFir淘客集成包",
     "keywords": [
         "yii2",
-        "jayfir"
+        "jayfir",
+        "ali"
     ],
     "authors": [
         {
@@ -11,7 +12,7 @@
             "email": "chinhui@coderfarmer.com"
         }
     ],
-    "type": "project",
+    "type": "yii-extension",
     "license": "Apache License 2.0",
     "homepage": "https://github.com/jayfir/mn-sys-ali",
     "require": {
