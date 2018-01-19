@@ -303,7 +303,7 @@ class TopClient extends Component
                 $resp
             ));
         }
-        return $respObject;
+        return self::objectToArray($respObject);
     }
 
     public function exec($paramsArray)
