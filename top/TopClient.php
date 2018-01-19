@@ -35,7 +35,6 @@ class TopClient
     protected function generateSign($params)
     {
         ksort($params);
-
         $stringToBeSigned = $this->secretKey;
         foreach ($params as $k => $v) {
             if (is_string($v) && "@" != substr($v, 0, 1)) {
@@ -44,7 +43,6 @@ class TopClient
         }
         unset($k, $v);
         $stringToBeSigned .= $this->secretKey;
-
         return strtoupper(md5($stringToBeSigned));
     }
 
