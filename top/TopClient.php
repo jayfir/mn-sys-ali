@@ -353,4 +353,72 @@ class TopClient extends Component
         return $o;
     }
 
+    /**
+     * 获取详情
+     * @staticvar array $_HwsMobileTaobaoApi
+     * @param type $item_id
+     * @return string|array
+     */
+    public function getItemDetail($item_id)
+    {
+        static $_HwsMobileTaobaoApi = array();
+        if (empty($item_id)) {
+            return '';
+        }
+        if (isset($_HwsMobileTaobaoApi[$item_id])) {
+            return $_HwsMobileTaobaoApi[$item_id];
+        }
+        $html = $this->getTaoBaoHtml("http://hws.m.taobao.com/cache/wdetail/5.0/?id={$item_id}&ttid=2013@taobao_h5_1.0.0&exParams={}");
+        if (empty($html)) {
+            $html = file_get_contents("http://hws.m.taobao.com/cache/wdetail/5.0/?id={$item_id}&ttid=2013@taobao_h5_1.0.0&exParams={}");
+        }
+        if (strlen(trim($html))) {
+            $json = json_decode($html, true);
+            return $json;
+        }
+        return '';
+    }
+
+    /**
+     *  抓取详情页数据
+     * @param type $url
+     * @param type $httpheader
+     * @return boolean
+     */
+    public function getTaoBaoHtml(
+    $url, $httpheader = array(
+        "User-Agent: {Mozilla/5.0 (Windows NT 6.1; WOW64; rv:26.0) Gecko/20100101 Firefox/26.0}",
+        "Accept: {text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8}",
+        "Accept-Language: {zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3}",
+        "Cookie:cna=Mp87DcqkeAwCATs5682P1/t2; thw=cn; miid=5491147790075499745; ck1=; uc3=nk2=saDLt6w%2B5Gs%3D&id2=UondEpIVVplj&vt3=F8dATkOLPpokm6bGDhE%3D&lg2=W5iHLLyFOGW7aA%3D%3D; unt=%E4%B8%80%E5%8F%B6%E6%A9%99%E5%84%BF%26center; lgc=%5Cu4E00%5Cu53F6%5Cu6A59%5Cu513F; tracknick=%5Cu4E00%5Cu53F6%5Cu6A59%5Cu513F; mt=np=&ci=94_1; _cc_=V32FPkk%2Fhw%3D%3D; tg=0; lzstat_uv=12528993053507599788|3492151@3258512@2043323@3045821@2948565@2805963; ali_ab=121.204.248.172.1422326386252.4; v=0; _m_h5_tk=c9495908692264fd9118e9a136e1f7ce_1422594765215; _m_h5_tk_enc=30502dd9640fd62e29295ffd6cca9a9c; _tb_token_=OETIHpEHeXJG; uc1=cookie14=UoW1FqnZMKesHg%3D%3D; cookie2=1c9524764994b6a44b7acd1176ba8e6b; t=13a7987269b30f6d82e95e6a095b4fa8; supportWebp=false; isg=999825D4169DBF6CF5C2959B358C661E",
+    )
+    )
+    {
+        if (empty($url)) {
+            return false;
+        }
+        $ch = curl_init();
+        // 设置 url
+        curl_setopt($ch, CURLOPT_URL, $url);
+        //构造IP
+        curl_setopt($ch, CURLOPT_HTTPHEADER, array('X-FORWARDED-FOR:127.0.0.1', 'CLIENT-IP:127.0.0.0'));
+        //构造来路
+        curl_setopt($ch, CURLOPT_REFERER, "http://www.taobao.com/ ");
+        // 设置浏览器的特定header
+        curl_setopt($ch, CURLOPT_HTTPHEADER, $httpheader);
+        // 页面内容我们并不需要
+        curl_setopt($ch, CURLOPT_NOBODY, 0);
+        // 只需返回HTTP header
+        curl_setopt($ch, CURLOPT_HEADER, 0);
+        // 返回结果，而不是输出它
+        //curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        //curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+        ob_start();
+        curl_exec($ch);
+        $html = ob_get_contents();
+        ob_end_clean();
+        curl_close($ch);
+        return $html;
+    }
+
 }
