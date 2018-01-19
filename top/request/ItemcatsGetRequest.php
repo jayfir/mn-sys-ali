@@ -34,6 +34,7 @@ class ItemcatsGetRequest
     public function setCids($cids)
     {
         $this->cids = $cids;
+        $this->apiParas["cids"] = $cids;
     }
 
     public function getCids()
@@ -44,6 +45,7 @@ class ItemcatsGetRequest
     public function setParentCid($parent_cid)
     {
         $this->parent_cid = $parent_cid;
+        $this->apiParas["parent_cid"] = $parent_cid;
     }
 
     public function getParentCid()
