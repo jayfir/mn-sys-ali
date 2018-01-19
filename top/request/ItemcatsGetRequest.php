@@ -14,8 +14,20 @@ use jayfir\ali\top\RequestCheckUtil;
 class ItemcatsGetRequest
 {
 
+    /**
+     * 获取ID
+     * @var type 
+     */
     private $cids;
+
+    /**
+     * cid,parent_cid,name,is_parent
+     * @var type 
+     */
     private $fields;
+    /*
+     * 类目父级ID
+     */
     private $parent_cid;
     private $apiParas = array();
 
