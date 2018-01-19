@@ -13,7 +13,7 @@
         }
     ],
     "type": "yii-extension",
-    "license": "Apache License 2.0",
+    "license": "MIT",
     "homepage": "https://github.com/jayfir/mn-sys-ali",
     "require": {
         "php": ">=5.6",
