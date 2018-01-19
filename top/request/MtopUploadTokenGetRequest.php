@@ -2,6 +2,8 @@
 
 namespace jayfir\ali\top\request;
 
+use jayfir\ali\top\RequestCheckUtil;
+
 /**
  * TOP API: taobao.mtop.upload.token.get request
  * 

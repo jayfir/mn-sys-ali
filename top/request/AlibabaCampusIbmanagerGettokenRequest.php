@@ -2,6 +2,8 @@
 
 namespace jayfir\ali\top\request;
 
+use jayfir\ali\top\RequestCheckUtil;
+
 /**
  * TOP API: alibaba.campus.ibmanager.gettoken request
  * 

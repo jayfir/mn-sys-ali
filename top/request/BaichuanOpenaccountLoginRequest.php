@@ -2,6 +2,9 @@
 
 namespace jayfir\ali\top\request;
 
+use jayfir\ali\top\RequestCheckUtil;
+use jayfir\ali\top\RequestCheckUtil;
+
 /**
  * TOP API: taobao.baichuan.openaccount.login request
  * 

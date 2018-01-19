@@ -4,8 +4,10 @@ namespace jayfir\ali\top;
 
 use jayfir\ali\top\TopLogger;
 use jayfir\ali\top\ResultSet;
+use Yii;
+use yii\base\Component;
 
-class TopClient
+class TopClient extends Component
 {
 
     public $appkey;
@@ -26,11 +28,6 @@ class TopClient
         return $this->appkey;
     }
 
-    public function __construct($appkey = "", $secretKey = "")
-    {
-        $this->appkey = $appkey;
-        $this->secretKey = $secretKey;
-    }
 
     protected function generateSign($params)
     {
