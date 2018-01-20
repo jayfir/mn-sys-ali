@@ -6,7 +6,7 @@ namespace jayfir\ali\top\domain;
  * 漫游消息
  * @author auto create
  */
-class RoamingMessage
+class RoamingMessage extends \yii\base\Model
 {
 
     /**

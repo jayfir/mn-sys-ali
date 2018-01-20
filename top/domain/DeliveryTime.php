@@ -6,7 +6,7 @@ namespace jayfir\ali\top\domain;
  * 发货时间数据结构
  * @author auto create
  */
-class DeliveryTime
+class DeliveryTime extends \yii\base\Model
 {
 
     /**

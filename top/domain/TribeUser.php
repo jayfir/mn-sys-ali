@@ -6,7 +6,7 @@ namespace jayfir\ali\top\domain;
  * OPENIM群成员信息
  * @author auto create
  */
-class TribeUser
+class TribeUser extends \yii\base\Model
 {
 
     /**

@@ -6,7 +6,7 @@ namespace jayfir\ali\top\domain;
  * 验证验证码
  * @author auto create
  */
-class CheckVerCodeRequest
+class CheckVerCodeRequest extends \yii\base\Model
 {
 
     /**

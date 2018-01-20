@@ -6,7 +6,7 @@ namespace jayfir\ali\top\domain;
  * 类目属性
  * @author auto create
  */
-class Feature
+class Feature extends \yii\base\Model
 {
 
     /**

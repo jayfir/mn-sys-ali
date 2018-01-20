@@ -6,7 +6,7 @@ namespace jayfir\ali\top\domain;
  * Open Account申请token的结果
  * @author auto create
  */
-class OpenAccountTokenApplyResult
+class OpenAccountTokenApplyResult extends \yii\base\Model
 {
 
     /**

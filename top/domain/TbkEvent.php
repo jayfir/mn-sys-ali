@@ -6,7 +6,7 @@ namespace jayfir\ali\top\domain;
  * 淘客定向招商活动基本信息
  * @author auto create
  */
-class TbkEvent
+class TbkEvent extends \yii\base\Model
 {
 
     /**

@@ -6,7 +6,7 @@ namespace jayfir\ali\top\domain;
  * 确认收货费用结构
  * @author auto create
  */
-class TradeConfirmFee
+class TradeConfirmFee extends \yii\base\Model
 {
 
     /**

@@ -6,7 +6,7 @@ namespace jayfir\ali\top\domain;
  * 消息列表
  * @author auto create
  */
-class TribeMessage
+class TribeMessage extends \yii\base\Model
 {
 
     /**

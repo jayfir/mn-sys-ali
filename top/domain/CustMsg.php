@@ -6,7 +6,7 @@ namespace jayfir\ali\top\domain;
  * 自定义消息内容
  * @author auto create
  */
-class CustMsg
+class CustMsg extends \yii\base\Model
 {
 
     /**

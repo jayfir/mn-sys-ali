@@ -6,7 +6,7 @@ namespace jayfir\ali\top\domain;
  * 发送验证码请求
  * @author auto create
  */
-class SendVerCodeRequest
+class SendVerCodeRequest extends \yii\base\Model
 {
 
     /**

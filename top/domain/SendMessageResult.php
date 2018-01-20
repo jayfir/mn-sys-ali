@@ -6,7 +6,7 @@ namespace jayfir\ali\top\domain;
  * 发送结果
  * @author auto create
  */
-class SendMessageResult
+class SendMessageResult extends \yii\base\Model
 {
 
     /**

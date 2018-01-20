@@ -6,7 +6,7 @@ namespace jayfir\ali\top\domain;
  * 宝贝主图视频数据结构
  * @author auto create
  */
-class MpicVideo
+class MpicVideo extends \yii\base\Model
 {
 
     /**

@@ -6,7 +6,7 @@ namespace jayfir\ali\top\domain;
  * result
  * @author auto create
  */
-class Result
+class Result extends \yii\base\Model
 {
 
     /**

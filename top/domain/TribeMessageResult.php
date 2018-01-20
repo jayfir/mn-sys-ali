@@ -6,7 +6,7 @@ namespace jayfir\ali\top\domain;
  * 返回结构
  * @author auto create
  */
-class TribeMessageResult
+class TribeMessageResult extends \yii\base\Model
 {
 
     /**

@@ -6,7 +6,7 @@ namespace jayfir\ali\top\domain;
  * 商品视频
  * @author auto create
  */
-class ItemVideo
+class ItemVideo extends \yii\base\Model
 {
 
     /**

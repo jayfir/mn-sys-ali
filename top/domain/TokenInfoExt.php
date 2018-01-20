@@ -6,7 +6,7 @@ namespace jayfir\ali\top\domain;
  * token info中的扩展字段
  * @author auto create
  */
-class TokenInfoExt
+class TokenInfoExt extends \yii\base\Model
 {
 
     /**

@@ -6,7 +6,7 @@ namespace jayfir\ali\top\domain;
  * 淘宝客选品库
  * @author auto create
  */
-class TbkFavorites
+class TbkFavorites extends \yii\base\Model
 {
 
     /**

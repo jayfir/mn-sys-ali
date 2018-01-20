@@ -6,7 +6,7 @@ namespace jayfir\ali\top\domain;
  * 搜索查询返回结果
  * @author auto create
  */
-class OpenAccountSearchResult
+class OpenAccountSearchResult extends \yii\base\Model
 {
 
     /**

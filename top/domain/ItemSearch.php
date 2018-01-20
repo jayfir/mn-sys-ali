@@ -6,7 +6,7 @@ namespace jayfir\ali\top\domain;
  * 商品搜索结果信息
  * @author auto create
  */
-class ItemSearch
+class ItemSearch extends \yii\base\Model
 {
 
     /**

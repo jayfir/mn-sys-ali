@@ -6,8 +6,8 @@ namespace jayfir\ali\top\domain;
  * 具体实例集合
  * @author auto create
  */
-class Json
-{
+class Json extends \yii\base\Model
+{ 
 
     /**
      * app用户id

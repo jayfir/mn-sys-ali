@@ -5,8 +5,8 @@ namespace jayfir\ali\top\domain;
 /**
  * 通用结果
  * @author auto create
- */
-class BmcResult
+ */ 
+class BmcResult extends \yii\base\Model
 {
 
     /**

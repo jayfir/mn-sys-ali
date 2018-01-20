@@ -6,7 +6,7 @@ namespace jayfir\ali\top\domain;
  * 结果对象
  * @author auto create
  */
-class Model
+class Model extends \yii\base\Model
 {
 
     /**

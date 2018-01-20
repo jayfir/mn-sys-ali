@@ -6,7 +6,7 @@ namespace jayfir\ali\top\domain;
  * 消息内容节点序列
  * @author auto create
  */
-class MessageItem
+class MessageItem extends \yii\base\Model
 {
 
     /**

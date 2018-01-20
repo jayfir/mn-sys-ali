@@ -6,7 +6,7 @@ namespace jayfir\ali\top\domain;
  * 淘宝客店铺
  * @author auto create
  */
-class NTbkShop
+class NTbkShop extends \yii\base\Model
 {
 
     /**

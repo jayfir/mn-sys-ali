@@ -6,7 +6,7 @@ namespace jayfir\ali\top\domain;
  * query
  * @author auto create
  */
-class TopItemQuery
+class TopItemQuery extends \yii\base\Model
 {
 
     /**

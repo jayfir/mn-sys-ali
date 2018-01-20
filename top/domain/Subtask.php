@@ -6,7 +6,7 @@ namespace jayfir\ali\top\domain;
  * 批量异步任务的子任务结果
  * @author auto create
  */
-class Subtask
+class Subtask extends \yii\base\Model
 {
 
     /**

@@ -6,7 +6,7 @@ namespace jayfir\ali\top\domain;
  * 应用消息查询结果
  * @author auto create
  */
-class EsMessageResult
+class EsMessageResult extends \yii\base\Model
 {
 
     /**

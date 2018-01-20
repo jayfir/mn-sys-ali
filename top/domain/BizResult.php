@@ -6,7 +6,7 @@ namespace jayfir\ali\top\domain;
  * 返回结果对象
  * @author auto create
  */
-class BizResult
+class BizResult extends \yii\base\Model
 {
 
     /**

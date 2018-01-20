@@ -6,7 +6,7 @@ namespace jayfir\ali\top\domain;
  * 用户地址
  * @author auto create
  */
-class Location
+class Location extends \yii\base\Model
 {
 
     /**

@@ -6,7 +6,7 @@ namespace jayfir\ali\top\domain;
  * 淘宝联盟选品和招商宝贝信息
  * @author auto create
  */
-class UatmTbkItem
+class UatmTbkItem extends \yii\base\Model
 {
 
     /**

@@ -6,7 +6,7 @@ namespace jayfir\ali\top\domain;
  * 根据站点名称查询产品
  * @author auto create
  */
-class ApiResult
+class ApiResult extends \yii\base\Model
 {
 
     /**

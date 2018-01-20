@@ -6,7 +6,7 @@ namespace jayfir\ali\top\domain;
  * 商品数据
  * @author auto create
  */
-class Items
+class Items extends \yii\base\Model
 {
 
     /**

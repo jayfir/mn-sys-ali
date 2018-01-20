@@ -6,7 +6,7 @@ namespace jayfir\ali\top\domain;
  * 产品扩展信息
  * @author auto create
  */
-class ProductExtraInfo
+class ProductExtraInfo extends \yii\base\Model
 {
 
     /**

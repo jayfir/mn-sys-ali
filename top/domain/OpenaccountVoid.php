@@ -6,7 +6,7 @@ namespace jayfir\ali\top\domain;
  * Open Account模型
  * @author auto create
  */
-class OpenaccountVoid
+class OpenaccountVoid extends \yii\base\Model
 {
 
     /**

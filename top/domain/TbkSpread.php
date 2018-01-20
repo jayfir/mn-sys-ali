@@ -6,7 +6,7 @@ namespace jayfir\ali\top\domain;
  * 传播形式对象列表
  * @author auto create
  */
-class TbkSpread
+class TbkSpread extends \yii\base\Model
 {
 
     /**

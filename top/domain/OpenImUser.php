@@ -6,7 +6,7 @@ namespace jayfir\ali\top\domain;
  * 用户信息
  * @author auto create
  */
-class OpenImUser
+class OpenImUser extends \yii\base\Model
 {
 
     /**

@@ -6,7 +6,7 @@ namespace jayfir\ali\top\domain;
  * data
  * @author auto create
  */
-class MapData
+class MapData extends \yii\base\Model
 {
 
     /**

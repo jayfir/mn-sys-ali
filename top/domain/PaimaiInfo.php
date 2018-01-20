@@ -6,7 +6,7 @@ namespace jayfir\ali\top\domain;
  * 拍卖商品相关信息
  * @author auto create
  */
-class PaimaiInfo
+class PaimaiInfo extends \yii\base\Model
 {
 
     /**

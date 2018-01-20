@@ -6,7 +6,7 @@ namespace jayfir\ali\top\domain;
  * 多文本内容
  * @author auto create
  */
-class Texts
+class Texts extends \yii\base\Model
 {
 
     /**

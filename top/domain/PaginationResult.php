@@ -6,7 +6,7 @@ namespace jayfir\ali\top\domain;
  * 返回结果
  * @author auto create
  */
-class PaginationResult
+class PaginationResult extends \yii\base\Model
 {
 
     /**

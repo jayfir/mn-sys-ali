@@ -6,7 +6,7 @@ namespace jayfir\ali\top\domain;
  * KFC 关键词过滤匹配结果
  * @author auto create
  */
-class KfcSearchResult
+class KfcSearchResult extends \yii\base\Model
 {
 
     /**

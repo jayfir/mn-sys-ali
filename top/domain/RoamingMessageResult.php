@@ -6,7 +6,7 @@ namespace jayfir\ali\top\domain;
  * 消息查询结果
  * @author auto create
  */
-class RoamingMessageResult
+class RoamingMessageResult extends \yii\base\Model
 {
 
     /**

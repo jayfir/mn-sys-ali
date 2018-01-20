@@ -6,7 +6,7 @@ namespace jayfir\ali\top\domain;
  * 词法分析返回结果topResult和处理状态topStatus
  * @author auto create
  */
-class WordResult
+class WordResult extends \yii\base\Model
 {
 
     /**

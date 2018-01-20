@@ -6,7 +6,7 @@ namespace jayfir\ali\top\domain;
  * 被设置昵称的群成员
  * @author auto create
  */
-class User
+class User extends \yii\base\Model
 {
 
     /**

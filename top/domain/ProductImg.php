@@ -6,7 +6,7 @@ namespace jayfir\ali\top\domain;
  * 产品图片
  * @author auto create
  */
-class ProductImg
+class ProductImg extends \yii\base\Model
 {
 
     /**

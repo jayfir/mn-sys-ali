@@ -6,7 +6,7 @@ namespace jayfir\ali\top\domain;
  * 淘抢购对象
  * @author auto create
  */
-class Results
+class Results extends \yii\base\Model
 {
 
     /**

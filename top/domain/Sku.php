@@ -6,7 +6,7 @@ namespace jayfir\ali\top\domain;
  * Sku结构
  * @author auto create
  */
-class Sku
+class Sku extends \yii\base\Model
 {
 
     /**

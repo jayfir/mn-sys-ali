@@ -6,7 +6,7 @@ namespace jayfir\ali\top\domain;
  * 文本分析结果
  * @author auto create
  */
-class SemanticResult
+class SemanticResult extends \yii\base\Model
 {
 
     /**

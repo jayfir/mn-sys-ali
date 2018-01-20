@@ -7,7 +7,7 @@ namespace jayfir\ali\top\domain;
   生产许可证号、产品标准号、厂名、厂址等
  * @author auto create
  */
-class FoodSecurity
+class FoodSecurity extends \yii\base\Model
 {
 
     /**

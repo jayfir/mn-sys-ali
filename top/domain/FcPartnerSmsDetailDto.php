@@ -6,7 +6,7 @@ namespace jayfir\ali\top\domain;
  * 1
  * @author auto create
  */
-class FcPartnerSmsDetailDto
+class FcPartnerSmsDetailDto extends \yii\base\Model
 {
 
     /**

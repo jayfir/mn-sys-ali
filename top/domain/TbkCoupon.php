@@ -6,7 +6,7 @@ namespace jayfir\ali\top\domain;
  * TbkCoupon
  * @author auto create
  */
-class TbkCoupon
+class TbkCoupon extends \yii\base\Model
 {
 
     /**

@@ -6,7 +6,7 @@ namespace jayfir\ali\top\domain;
  * 验证token返回数据结构
  * @author auto create
  */
-class OpenAccountTokenValidateResult
+class OpenAccountTokenValidateResult extends \yii\base\Model
 {
 
     /**

@@ -6,7 +6,7 @@ namespace jayfir\ali\top\domain;
  * 口令参数
  * @author auto create
  */
-class GenPwdIsvParamDto
+class GenPwdIsvParamDto extends \yii\base\Model
 {
 
     /**

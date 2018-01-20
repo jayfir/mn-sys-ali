@@ -6,7 +6,7 @@ namespace jayfir\ali\top\domain;
  * 地址区域结构
  * @author auto create
  */
-class Area
+class Area extends \yii\base\Model
 {
 
     /**

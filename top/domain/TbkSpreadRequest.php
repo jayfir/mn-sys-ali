@@ -5,8 +5,8 @@ namespace jayfir\ali\top\domain;
 /**
  * 请求列表，内部包含多个url
  * @author auto create
- */
-class TbkSpreadRequest
+ */ 
+class TbkSpreadRequest  extends \yii\base\Model
 {
 
     /**

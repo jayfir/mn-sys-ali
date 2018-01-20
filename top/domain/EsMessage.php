@@ -6,7 +6,7 @@ namespace jayfir\ali\top\domain;
  * openim应用消息
  * @author auto create
  */
-class EsMessage
+class EsMessage extends \yii\base\Model
 {
 
     /**

@@ -6,7 +6,7 @@ namespace jayfir\ali\top\domain;
  * 淘宝文本算法返回数据结构
  * @author auto create
  */
-class ProcessResult
+class ProcessResult extends \yii\base\Model
 {
 
     /**

@@ -6,7 +6,7 @@ namespace jayfir\ali\top\domain;
  * 该数据结构保存宝贝描述对应的规范化信息
  * @author auto create
  */
-class DescModuleInfo
+class DescModuleInfo extends \yii\base\Model
 {
 
     /**

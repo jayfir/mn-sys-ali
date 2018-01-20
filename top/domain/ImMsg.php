@@ -6,7 +6,7 @@ namespace jayfir\ali\top\domain;
  * openim消息结构体
  * @author auto create
  */
-class ImMsg
+class ImMsg extends \yii\base\Model
 {
 
     /**

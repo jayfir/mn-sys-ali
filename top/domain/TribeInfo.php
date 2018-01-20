@@ -6,7 +6,7 @@ namespace jayfir\ali\top\domain;
  * 群信息
  * @author auto create
  */
-class TribeInfo
+class TribeInfo extends \yii\base\Model
 {
 
     /**

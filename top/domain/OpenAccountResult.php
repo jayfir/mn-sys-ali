@@ -6,7 +6,7 @@ namespace jayfir\ali\top\domain;
  * 结果
  * @author auto create
  */
-class OpenAccountResult
+class OpenAccountResult extends \yii\base\Model
 {
 
     /**

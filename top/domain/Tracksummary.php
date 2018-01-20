@@ -6,7 +6,7 @@ namespace jayfir\ali\top\domain;
  * 用户最近轨迹信息
  * @author auto create
  */
-class Tracksummary
+class Tracksummary extends \yii\base\Model
 {
 
     /**

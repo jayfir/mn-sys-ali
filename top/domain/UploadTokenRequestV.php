@@ -6,7 +6,7 @@ namespace jayfir\ali\top\domain;
  * 系统自动生成
  * @author auto create
  */
-class UploadTokenRequestV
+class UploadTokenRequestV extends \yii\base\Model
 {
 
     /**

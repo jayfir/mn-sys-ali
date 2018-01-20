@@ -6,7 +6,7 @@ namespace jayfir\ali\top\domain;
  * results
  * @author auto create
  */
-class TopDownloadRecordDo
+class TopDownloadRecordDo extends \yii\base\Model
 {
 
     /**

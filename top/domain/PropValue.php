@@ -6,7 +6,7 @@ namespace jayfir\ali\top\domain;
  * 属性值
  * @author auto create
  */
-class PropValue
+class PropValue extends \yii\base\Model
 {
 
     /**

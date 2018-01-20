@@ -6,7 +6,7 @@ namespace jayfir\ali\top\domain;
  * 本地生活垂直市场数据结构，修改宝贝时在参数empty_fields里设置locality_life可删除所有电子凭证信息
  * @author auto create
  */
-class LocalityLife
+class LocalityLife extends \yii\base\Model
 {
 
     /**

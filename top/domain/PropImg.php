@@ -6,7 +6,7 @@ namespace jayfir\ali\top\domain;
  * 商品属性图片结构
  * @author auto create
  */
-class PropImg
+class PropImg extends \yii\base\Model
 {
 
     /**

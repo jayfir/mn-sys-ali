@@ -6,7 +6,7 @@ namespace jayfir\ali\top\domain;
  * 消息序列
  * @author auto create
  */
-class TextMessage
+class TextMessage extends \yii\base\Model
 {
 
     /**
