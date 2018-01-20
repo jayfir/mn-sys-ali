@@ -166,7 +166,7 @@ class SecurityUtil
         $separator = $this->SEPARATOR_CHAR_MAP[$type];
         if ('phone' == $type) {
             if (strlen($data) != 4) {
-                throw new Exception("phoneNumber error");
+                throw new \Exception("phoneNumber error");
             }
             return $separator . $this->hmacMD5EncryptToBase64($data, $secretContext->secret) . $separator;
         } else {
@@ -245,7 +245,7 @@ class SecurityUtil
     function decrypt($data, $type, $secretContext)
     {
         if (!$this->isEncryptData($data, $type)) {
-            throw new Exception("数据[" . $data . "]不是类型为[" . $type . "]的加密数据");
+            throw new \Exception("数据[" . $data . "]不是类型为[" . $type . "]的加密数据");
         }
         $dataLen = strlen($data);
         $separator = $this->SEPARATOR_CHAR_MAP[$type];
@@ -450,7 +450,7 @@ class SecurityUtil
      *            密钥
      * @param compressLen压缩长度
      * @return
-     * @throws Exception
+     * @throws \Exception
      */
     function hmacMD5EncryptToBase64($encryptText, $encryptKey, $compressLen = 0)
     {

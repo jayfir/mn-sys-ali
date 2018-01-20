@@ -51,7 +51,7 @@ class Security
         mcrypt_generic_deinit($module);
         mcrypt_module_close($module);
         if (!$decrypted) {
-            throw new Exception("Decrypt Error,Please Check SecretKey");
+            throw new \Exception("Decrypt Error,Please Check SecretKey");
         }
         return $decrypted;
     }

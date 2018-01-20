@@ -80,11 +80,11 @@ class DingTalkClient
         $reponse = curl_exec($ch);
 
         if (curl_errno($ch)) {
-            throw new Exception(curl_error($ch), 0);
+            throw new \Exception(curl_error($ch), 0);
         } else {
             $httpStatusCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
             if (200 !== $httpStatusCode) {
-                throw new Exception($reponse, $httpStatusCode);
+                throw new \Exception($reponse, $httpStatusCode);
             }
         }
         curl_close($ch);
@@ -149,11 +149,11 @@ class DingTalkClient
         unset($data);
 
         if (curl_errno($ch)) {
-            throw new Exception(curl_error($ch), 0);
+            throw new \Exception(curl_error($ch), 0);
         } else {
             $httpStatusCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
             if (200 !== $httpStatusCode) {
-                throw new Exception($reponse, $httpStatusCode);
+                throw new \Exception($reponse, $httpStatusCode);
             }
         }
         curl_close($ch);
@@ -185,7 +185,7 @@ class DingTalkClient
         if ($this->checkRequest) {
             try {
                 $request->check();
-            } catch (Exception $e) {
+            } catch (\Exception $e) {
 
                 $result->code = $e->getCode();
                 $result->msg = $e->getMessage();
@@ -238,7 +238,7 @@ class DingTalkClient
             } else {
                 $resp = $this->curl($requestUrl, $apiParams);
             }
-        } catch (Exception $e) {
+        } catch (\Exception $e) {
             $this->logCommunicationError($sysParams["method"], $requestUrl, "HTTP_ERROR_" . $e->getCode(), $e->getMessage());
             $result->code = $e->getCode();
             $result->msg = $e->getMessage();

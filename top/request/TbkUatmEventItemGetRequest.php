@@ -25,6 +25,7 @@ class TbkUatmEventItemGetRequest
 
     /**
      * 需要输出则字段列表，逗号分隔
+     * num_iid,title,pict_url,small_images,reserve_price,zk_final_price,user_type,provcity,item_url,seller_id,volume,nick,shop_title,zk_final_price_wap,event_start_time,event_end_time,tk_rate,status,type
      * */
     private $fields;
 

@@ -26,7 +26,7 @@ class AliyunClient
         if ($this->checkRequest) {
             try {
                 $request->check();
-            } catch (Exception $e) {
+            } catch (\Exception $e) {
                 $result->code = $e->getCode();
                 $result->message = $e->getMessage();
                 return $result;
@@ -59,7 +59,7 @@ class AliyunClient
         //发起HTTP请求
         try {
             $resp = $this->curl($requestUrl, null);
-        } catch (Exception $e) {
+        } catch (\Exception $e) {
             $this->logCommunicationError($apiParams["Action"], $requestUrl, "HTTP_ERROR_" . $e->getCode(), $e->getMessage());
             if ("json" == $this->format) {
                 return json_decode($e->getMessage());
@@ -196,7 +196,7 @@ class AliyunClient
         $reponse = curl_exec($ch);
 
         if (curl_errno($ch)) {
-            throw new Exception(curl_error($ch), 0);
+            throw new \Exception(curl_error($ch), 0);
         }
         curl_close($ch);
         return $reponse;
