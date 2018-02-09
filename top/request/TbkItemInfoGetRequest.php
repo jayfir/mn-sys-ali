@@ -15,7 +15,7 @@ class TbkItemInfoGetRequest
 
     /**
      * 需返回的字段列表
-     *  num_iid,title,pict_url,small_images,reserve_price,zk_final_price,user_type,provcity,item_url
+     *  num_iid,title,pict_url,small_images,reserve_price,zk_final_price,user_type,provcity,item_url,seller_id,volume,nick
      * */
     private $fields;
 
