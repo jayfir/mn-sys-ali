@@ -207,7 +207,7 @@ class TopClient extends Component
 
                 $result->code = $e->getCode();
                 $result->msg = $e->getMessage();
-                return $result;
+                return self::objectToArray($result);
             }
         }
         //组装系统参数
@@ -264,7 +264,7 @@ class TopClient extends Component
             $this->logCommunicationError($sysParams["method"], $requestUrl, "HTTP_ERROR_" . $e->getCode(), $e->getMessage());
             $result->code = $e->getCode();
             $result->msg = $e->getMessage();
-            return $result;
+            return self::objectToArray($result);
         }
 
         unset($apiParams);
@@ -291,7 +291,7 @@ class TopClient extends Component
             $this->logCommunicationError($sysParams["method"], $requestUrl, "HTTP_RESPONSE_NOT_WELL_FORMED", $resp);
             $result->code = 0;
             $result->msg = "HTTP_RESPONSE_NOT_WELL_FORMED";
-            return $result;
+            return self::objectToArray($result);
         }
 
         //如果TOP返回了错误码，记录到业务错误日志中
